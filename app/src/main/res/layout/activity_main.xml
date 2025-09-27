@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <Button android:id="@+id/btnPickInput"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Pick Input PDF" />
+
+    <Button android:id="@+id/btnPickLined"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Pick Lined PDF" />
+
+    <EditText android:id="@+id/edtFileName"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Enter output file name" />
+
+    <Button android:id="@+id/btnRunOverlay"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Run PDF Overlay" />
+
+    <Button android:id="@+id/btnOpenPdf"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Open Output PDF" />
+
+    <Button android:id="@+id/btnSharePdf"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Share Output PDF" />
+
+    <TextView android:id="@+id/txtStatus"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="16dp" android:text="Status: Waiting..." />
+</LinearLayout>
