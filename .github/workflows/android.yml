@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-    name: Build APK
     runs-on: ubuntu-latest
 
     steps:
@@ -27,6 +26,9 @@ jobs:
           ~/.gradle/wrapper/
         key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
         restore-keys: gradle-${{ runner.os }}-
+
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
 
     - name: Build APK
       run: ./gradlew assembleRelease
